@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Autoprocess replacment template - new customer</title>
+
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'/ >
+    <!-- import scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../src/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
+    <script src="../src/scripts/contactDetails.js"></script>
+</head>
+
+<body>
+    <form id="quote-contact-details-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <h3 class="h3"><strong>Quote:</strong> Partial Quote</h3>
+                    <small><strong>Number</strong>:14376675</small>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <h3 class="h3">
+                        <strong>Dealer:</strong> Listers Test Dealer
+                        <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                    </h3>
+                    <a href="#" data-toggle="tooltip" title="Click here for help with the system.">
+                        <small>In need of some help? <i class="fas fa-question-circle"></i>
+                        </small>
+                    </a>
+                </div>
+                <!-- Input fields -->
+                <div class="col-sm-12">
+                    <div class="blank-space"></div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Contact Details
+                            </li>
+                            <li class="breadcrumb-item"><a href="vehicledetails.html"> Vehicle Details</a></li>
+                            <li class="breadcrumb-item "><a href="sdn.html">SDN Details</a></li>
+                            <li class="breadcrumb-item "><a href="productsandservices.html"> Products and Services </a></li>
+                            <li class="breadcrumb-item "><a href="summary.html"> Summary</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-sm-12">
+                    <div class="progress invisible">
+                        <div class="progress-bar progress-bar progress-bar" role="progressbar" style="width: 0%;"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            0%
+                        </div>
+                    </div>
+                    <div class="blank-space"></div>
+                </div>
+                <div class="col-sm-12 col-lg-7">
+                    <fieldset id="dealer-details">
+                        <h5 class="h5">Dealer Details</h5>
+                        <hr class="style-two" />
+                        <div class="form-group">
+                            <label for="sales-person">Sales Person</label>
+                            <select class="form-control" id="sales-person">
+                                <option value="13102285">Dealer Account</option>
+                                <option value="13157070">Richard Branson</option>
+                                <option value="13157071">Peter Jones</option>
+                                <option value="13157072">Alan Sugar</option>
+                                <option value="13157073">Andrew Binns</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="retail-manager">Retail Manager</label>
+                            <select class="form-control" id="retail-manager">
+                                <option value="13157070">Richard Branson</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Franchise">Franchise</label>
+                            <select class="form-control" id="Franchise">
+                                <option value="13157070">Lexus</option>
+                                <option value="13157070">Honda</option>
+                                <option value="13157070">SEAT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title<span class="required-asterix">*</span></label>
+                            <input type="text" name="Title" id="title" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="first name">First Name<span class="required-asterix">*</span></label>
+                            <input id="first-name" name="First Name" type="text" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Surname<span class="required-asterix">*</span></label>
+                            <input id="surname" name="Surname" type="text" class="form-control" required />
+                        </div>
+                    </fieldset>
+                    <fieldset id="physical-address">
+                        <h5 class="h5">Physical Address:</h5>
+                        <hr class="style-two" />
+                        <div class="form-group">
+                            <label for="postcode">Postcode</label>
+                            <input id="postcode" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="property-no">Property No</label>
+                            <input id="property-no" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="property-name">Property Name</label>
+                            <input type="tel" id="property-name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="address-line">Address Line</label>
+                            <input type="text" id="address-line" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="town">Town</label>
+                            <input type="text" id="town" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="county">County</label>
+                            <input type="text" id="county" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" class="form-control" />
+                        </div>
+                    </fieldset>
+                    <fieldset id="contact-details">
+                        <h5 class="h5">Contact Details:</h5>
+                        <hr class="style-two" />
+                        <div class="form-group">
+                            <label for="contact-tel">Telephone<span class="required-asterix">*</span></label>
+                            <input type="tel" id="contact-tel" name="Telephone Number" type="tel" pattern="^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$"
+                                class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-tel">Work Tel</label>
+                            <input type="tel" id="work-tel" class="form-control" />
+                        </div>
+                        <div class="form-group" id="contact-mobile-group">
+                            <label for="contact-mobile-tel">Mobile Telephone</label>
+                            <input type="tel" id="contact-mobile-tel" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-tel">Email Address<span class="required-asterix">*</span></label>
+                            <input type="email" name="Email Address" id="contact-email" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-tel">Fax</label>
+                            <input type="tel" id="contact-fax" class="form-control" />
+                        </div>
+                        <p>
+                            I am happy to receive documentation in electronic format where
+                            available. I am aware that I can request a paper version at any
+                            time. <input type="checkbox" />
+                        </p>
+                        <p>
+                            Data Protection: Please be aware that AutoProtect will not share
+                            your details with any other company for the purposes of
+                            marketing but would like to keep you informed about AutoProtect
+                            products and services that may be of interest to you, please
+                            tick the boxes below to indicate your preferred methods of
+                            contact.
+                        </p>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="SMS" />
+                            <label class="form-check-label" for="SMS">SMS</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Email" />
+                            <label class="form-check-label" for="Email">Email</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Telephone" />
+                            <label class="form-check-label" for="Telephone">Telephone</label>
+                        </div>
+                    </fieldset>
+                    <div class="blank-space"></div>
+                    <fieldset id="distance-selling-acknowledgement">
+                        <h5 class="h5">Distance Selling Acknowledgement</h5>
+                        <hr class="style-two" />
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio" value="1" checked />If you
+                                buy in person from a representative of Listers Group
+                                at Listers Group's business premises, for example, in a
+                                showroom, this is referred to as an 'on premises contract'.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio" value="2" />
+                                If you are addressed in person by a representative of Listers
+                                Group not at Listers Group's business premises and the offer
+                                to purchase (completion of an order form) was not made at
+                                Listers Group's business premises, this will be an
+                                'off-premises contract'.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio" value="3" />
+                                If you purchase a vehicle without ever dealing in person with
+                                a Listers Group representative, for example, cars bought
+                                online or over the telephone, this is known as a 'distance
+                                contract'.
+                            </label>
+                        </div>
+                        <br />
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio" value="4" />
+                                This is a business purchase and the vehicle will be used for
+                                business purposes and therefore the Consumer Contracts
+                                (Information, Cancellation and Additional Charges) Regulations
+                                2013 do not apply.
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- GAP insurance warning -->
+                <div class="cols-sm-12 col-lg-5">
+                    <div class="blank-space"></div>
+
+                    <div class="card " id="gap-warning-card">
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Warning</strong>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                You may continue, but before activating this policy you must:
+                            </p>
+                            <p>
+                                <a href="#">Present the Key Information document on GAP insurance to
+                                    the customer.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blank-space"></div>
+                    <div class="card" id="error-list-card">
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Error</strong>
+                        </div>
+                        <div class="card-body">
+                            <p>In order to continue you must rectify the following:</p>
+                            <ul id="error-list">
+                                <!-- validation list populated here by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+            <div class="blank-space"></div>
+            <hr class="style-two" />
+            <div class="row">
+                <div class="col-6">
+                    <button id="back-button" type="button" class="btn btn-secondary btn-lg invisible">
+                        Previous <i class="fas fa-angle-right" style="font-size:14px"></i>
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button id="save-button" style="right:0px" type="button" class="btn btn-success btn-lg">
+                        Save <i class="fas fa-angle-right" style="font-size:14px"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <div class="blank-space"></div>
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">
+            <small>Copyright © Listers 2019. All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

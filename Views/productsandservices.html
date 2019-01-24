@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Autoprocess replacment template - new customer</title>
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'/>
+    <!-- import scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+
+        </script>
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript">
+
+    </script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js">
+
+    </script>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../src/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
+
+    <script src="../src/scripts/productsAndServices.js">
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <h3 class="h3"><strong>Quote:</strong> Partial Quote</h3>
+                <small><strong>Number</strong>:14376675</small>
+            </div>
+            <div class="col-sm-6 text-right">
+                <h3 class="h3">
+                    <strong>Dealer:</strong> Listers Test Dealer
+                    <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                </h3>
+                <a href="#" data-toggle="tooltip" title="Click here for help with the system.">
+                    <small>In need of some help? <i class="fas fa-question-circle"></i>
+                    </small>
+                </a>
+            </div>
+            <div class="col-sm-12">
+                <div class="blank-space"></div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="contactdetails.html">Contact Details</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="vehicledetails.html"> Vehicle Details</a></li>
+                        <li class="breadcrumb-item "><a href="sdn.html">SDN Details</a></li>
+                        <li class="breadcrumb-item active ">Products and Services </a></li>
+                        <li class="breadcrumb-item "><a href="summary.html"> Summary</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar progress-bar" role="progressbar" style="width: 80%;"
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        80%
+                    </div>
+                </div>
+                <div class="blank-space"></div>
+                <h5 class="h5">Available Products</h5>
+                <hr class="style-two" />
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Listers SMART
+                        <div class="float-right">
+                            <button name="Listers SMART" type="button" class="btn btn-danger product-button-remove" id="listers-smart-remove">
+                                Remove
+                            </button>
+                            <button name="Listers SMART" type="button" class="btn btn-primary product-button" id="listers-smart">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Complete Wheel
+                        <div class="float-right">
+                            <button name=" Listers Complete Wheel" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-complete-wheel-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Complete Wheel" type="button" class="btn btn-primary product-button"
+                                id="listers-complete-wheel">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Gap
+                        <div class="float-right">
+                            <label class="pr-4">Deferred Period</label>
+                            <button name="Listers Gap" type="button" class="btn btn-danger product-button-remove" id="listers-gap-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Gap" type="button" class="btn btn-primary product-button" disabled id="listers-gap">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Protech
+                        <div class="float-right">
+                            <button name=" Listers Protech" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-protech-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Protech" type="button" class="btn btn-primary product-button" id="listers-protech">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Protech Ultima
+                        <div class="float-right">
+                            <button name=" Listers Protech Ultima" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-protech-ultima-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Protech Ultima" type="button" class="btn btn-primary product-button"
+                                id="listers-protech-ultima">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Leather Protect
+                        <div class="float-right">
+                            <button name="Listers Leather Protect" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-leather-protect-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Leather Protect" type="button" class="btn btn-primary product-button"
+                                id="listers-leather-protect">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Service Plan
+                        <div class="float-right">
+                            <button name="Service Plan" type="button" class="btn btn-danger product-button-remove" id="service-plan-remove">
+                                Remove
+                            </button>
+                            <button name="Service Plan" type="button" class="btn btn-primary product-button" id="service-plan">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Approved Dealer Guarantee
+                        <div class="float-right">
+                            <button name="Listers Approved Dealer Guarantee" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-approved-dealer-guarantee-remove">
+                                Remove
+                            </button>
+                            <button name=" Listers Approved Dealer Guarantee" type="button" class="btn btn-primary product-button"
+                                id="listers-approved-dealer-guarantee">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Personal Contract Purchase
+                        <div class="float-right">
+                            <button name="Listers Personal Contract Purchase" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-personal-contract-purchase-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Personal Contract Purchase" type="button" class="btn btn-primary product-button finance"
+                                id="listers-personal-contract-purchase">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Hire Purchase
+                        <div class="float-right">
+                            <button name="Listers Hire Purchase" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-hire-purchase-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Hire Purchase" type="button" class="btn btn-primary product-button finance"
+                                id="listers-hire-purchase">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Contract Hire
+                        <div class="float-right">
+                            <button name="Listers Contract Hire" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-contract-hire-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Contract Hire" type="button" class="btn btn-primary product-button finance"
+                                id="listers-contract-hire">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Lease Purchase
+                        <div class="float-right">
+                            <button name="Listers Lease Purchase" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-lease-purchase-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Lease Purchase" type="button" class="btn btn-primary product-button finance"
+                                id="listers-lease-purchase">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Finance Lease Balloon
+                        <div class="float-right">
+                            <button name=" Listers Finance Lease Balloon" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-finance-lease-balloon-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Finance Lease Balloon" type="button" class="btn btn-primary product-button finance"
+                                id="listers-finance-lease-balloon">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Lease Full Payout
+                        <div class="float-right">
+                            <button name="Listers Lease Full Payout" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-lease-full-payout-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Lease Full Payout" type="button" class="btn btn-primary product-button finance"
+                                id="listers-lease-full-payout">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Personal Loan/Autoloan
+                        <div class="float-right">
+                            <button name="Listers Personal Loan/Autoloan" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-personal-loan-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Personal Loan/Autoloan" type="button" class="btn btn-primary product-button finance"
+                                id="listers-personal-loan">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Conditional Sale
+                        <div class="float-right">
+                            <button name="Listers Conditional Sale" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-conditional-sale-remove">
+                                Remove
+                            </button>
+                            <button name="Listers Conditional Sale" type="button" class="btn btn-primary product-button finance"
+                                id="listers-conditional-sale">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Listers Personal Contract Hire
+                        <div class="float-right">
+                            <button name=" Listers Personal Contract Hire" type="button" class="btn btn-danger product-button-remove"
+                                id="listers-personal-contract-hire-remove">
+                                Remove
+                            </button>
+                            <button name=" Listers Personal Contract Hire" type="button" class="btn btn-primary product-button finance"
+                                id="listers-personal-contract-hire">
+                                View
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="blank-space"></div>
+        <hr class="style-two" />
+        <div class="row">
+            <div class="col-6">
+                <a href="sdn.html" id="back-button" class="btn btn-secondary btn-lg">
+                    Previous <i class="fas fa-angle-right" style="font-size:14px"></i>
+                </a>
+            </div>
+            <div class="col-6">
+                <button id="save-button" style="right:0px" type="button" class="btn btn-success btn-lg">
+                    Save <i class="fas fa-angle-right" style="font-size:14px"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="blank-space"></div>
+    <footer class="page-footer font-small blue fixed-bottom">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">
+            <small>Copyright © Listers 2019. All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <form id="finance-details">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title product-header">Modal title</h5>
+                        <h5 class="modal-title" style="position:absolute;right:40px;color:red" id="model-taken-label">
+                            Taken
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="product-presentation-tab" data-toggle="tab" href="#product-presentation"
+                                    role="tab" aria-controls="product-presentation" aria-selected="true">Product
+                                    Presentation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="finace-details-tab" data-toggle="tab" href="#finace-details"
+                                    role="tab" aria-controls="finace-details" aria-selected="false">Finance Details</a>
+                            </li>
+                            <li class="nav-item" class="cover-details-tab">
+                                <a class="nav-link" id="cover-details-tab" data-toggle="tab" href="#cover-details" role="tab"
+                                    aria-controls="cover-details" aria-selected="false">Cover Details</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="products-tab">
+                            <div class="tab-pane fade show active" id="product-presentation" role="tabpanel"
+                                aria-labelledby="product-presentation-tab">
+                                <br />
+                                <ul>
+                                    <p>
+                                        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in,
+                                        pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                                    </p>
+                                    <p>
+                                        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+                                        vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
+                                        quis, accumsan porttitor, facilisis luctus, metus.
+                                    </p>
+                                    <p>
+                                        Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                                        vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales
+                                        sit amet, nisi.
+                                    </p>
+                                    <p>
+                                        Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices
+                                        ut, elementum vulputate, nunc.
+                                    </p>
+                                    <div class="video-responsive">
+                                        <iframe width="420" height="315" src="https://player.vimeo.com/video/250837488?color=819bbe&amp;title=0&amp;byline=0&amp;portrait=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </ul>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="finace-details" role="tabpanel" aria-labelledby="finace-details-tab">
+
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <h5>Please choose Policy Type</h5>
+                                            <select id="policy-select" class="form-control" id="policy-type">
+                                                <option value="1">Lister example policy 1</option>
+                                                <option value="2">Lister example policy 2</option>
+                                                <option value="3">Lister example policy 3</option>
+                                            </select>
+                                        </div>
+                                        <br />
+                                        <h5 id="cover-details-title">Lister example policy 1</h5>
+                                        <div class="form-group">
+                                            <label for="policy-duration">Policy Duration</label>
+                                            <select id="policy-duration" class="form-control">
+                                                <option value="1">12 Months</option>
+                                                <option value="2">24 Months</option>
+                                                <option value="3">36 Months</option>
+                                                <option value="4">48 Months</option>
+                                                <option value="5">60 Months</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="policy-claim-limit">Policy Claim Limit</label>
+                                            <select id="policy-claim-limit" class="form-control">
+                                                <option value="1">£3000</option>
+                                                <option value="2">£5000</option>
+                                                <option value="3">£9000</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="policy-retail-price">Policy Retail Price incl. tax<span class="required-asterix">*</span></label>
+                                            <input name="Policy Retail Price" type="text" class="form-control" id="policy-retail-price"
+                                                required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="presentation-date-picker">Presentation Date<span class="required-asterix">*</span></label>
+                                            <input id="presentation-date-picker" name="Presentation Date" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cover-start-date-picker">Cover Start Date<span class="required-asterix">*</span></label>
+                                            <input id="cover-start-date-picker" name="Cover Start Date" required />
+                                        </div>
+                                        <h5>Additional Policy Information</h5>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="product-on-main-order" />
+                                                <label class="form-check-label" for="product-on-main-order">
+                                                    Is product on main order?
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" id="your-product-card">
+                                            <div class="alert alert-primary" role="alert">
+                                                <strong>Your product</strong>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>The product you have configured so far:</p>
+                                                <ul>
+                                                    <li>
+                                                        <strong class="product-header"></strong>
+                                                        <ul class="text-muted">
+                                                            <li>
+                                                                A Duration of Per Cover
+                                                            </li>
+                                                            <li>
+                                                                A Claim limit of Per Cover
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <hr class="style-two" />
+                                                Policy price
+                                                <strong class="float-right">GBP 569.00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary add-product">
+                                        Add
+                                    </button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger product-button-remove modal-remove-product">
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="cover-details" role="tabpanel" aria-labelledby="cover-details-tab">
+                                <br />
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <div class="form-group">
+                                            <h5>Please choose Policy Type</h5>
+                                            <select id="finance-policy-select" class="form-control">
+                                                <option value="1">Lister example policy 1</option>
+                                                <option value="2">Lister example policy 2</option>
+                                                <option value="3">Lister example policy 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="finance-type">Finance Type</label>
+                                            <select id="finance-type" class="form-control" disabled>
+                                                <option selected value="1">Personal Loan</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="finance-company">Finance Company</label>
+                                            <select id="finance-company" class="form-control">
+                                                <option value="1">VVWFS</option>
+                                                <option value="2">Honda Finace</option>
+                                                <option value="3">Lexus FS</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="final-payment">Final Payment (GMFV)<span class="required-asterix">*</span></label>
+                                            <input name="Final Payment" type="text" class="form-control" id="final-payment"
+                                                required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="amount-financed">Amount Financed<span class="required-asterix">*</span></label>
+                                            <input name="Amount Financed" type="text" class="form-control" id="amount-financed"
+                                                required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="finance-term">Finance Term (months)<span class="required-asterix">*</span></label>
+                                            <input name="Finance Term (months)" type="text" class="form-control" id="finance-term"
+                                                required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contracted-mileage">Contracted Mileage (per annum)<span class="required-asterix">*</span></label>
+                                            <input name="Contracted Mileage" type="text" class="form-control" id="contracted-mileage"
+                                                required />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="anticipated-mileage">Anticipated Mileage (per annum)<span class="required-asterix">*</span></label>
+                                            <input name="Anticipated Mileage" type="text" class="form-control" id="anticipated-mileage"
+                                                required />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card" id="your-product-card">
+                                            <div class="alert alert-primary" role="alert">
+                                                <strong>Your product</strong>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>The product you have configured so far:</p>
+                                                <strong class="product-header"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary add-product">
+                                        Add
+                                    </button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger product-button-remove modal-remove-product">
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<style>
+    /*Little hack CSS to remove buttons on load and not be overwritten by CSS - DO NOT USE IN PRODUCTION*/
+    .product-button-remove {
+        display: none;
+    }
+</style>

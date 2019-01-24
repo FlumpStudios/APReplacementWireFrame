@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Autoprocess replacment template - new customer</title>
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'/ >
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../src/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
+    <!-- import scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="../src/scripts/vehicleDetails.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h3 class="h3"><strong>Quote:</strong> Partial Quote</h3>
+                        <small><strong>Number</strong>:14376675</small>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <h3 class="h3">
+                            <strong>Dealer:</strong> Listers Test Dealer
+                            <i class="fas fa-caret-down" style="font-size: 18px;"></i>
+                        </h3>
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Click here for help with the system.">
+                            <small>In need of some help? <i class="fas fa-question-circle"></i>
+                            </small>
+                        </a>
+                    </div>
+                    <!-- Input fields -->
+                    <div class="col-sm-12">
+                        <div class="blank-space"></div>
+                        <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="contactdetails.html">Contact Details</a>
+                                </li>
+                                <li class="breadcrumb-item active">Vehicle Details</li>
+                                <li class="breadcrumb-item"><a href="sdn.html">SDN Details</a></li>
+                                <li class="breadcrumb-item"><a href="productsandservices.html">Products and Services </a></li>
+                                <li class="breadcrumb-item"><a href="summary.html">Summary</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar progress-bar" role="progressbar" style="width: 20%;"
+                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                20%
+                            </div>
+                        </div>
+                        <div class="blank-space"></div>
+                    </div>
+                    <div class="col-sm-12 col-lg-7">
+                        <form id="specified-vehicle-description-form">
+                            <fieldset id="specified-vehicle-description">
+                                <h5 class="h5">Specified Vehicle Description</h5>
+                                <hr class="style-two" />
+                                <div class="form-group">
+                                    <label for="vehicle-type">Vehicle Type</label>
+                                    <select class="form-control" id="vehicle-type">
+                                        <option value="1">Car</option>
+                                        <option value="4">LCV</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vehicle-reg-available">Is the Vehicle Reg available</label>
+                                    <select class="form-control" id="vehicle-reg-available">
+                                        <option value="true">Yes</option>
+                                        <option value="false">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="vehicle-reg-available-group">
+                                    <label for="vehicle-registration">Vehicle Registration<span class="required-asterix">*</span></label>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <input type="text" name="Vehicle Registration:" id="vehicle-registration"
+                                                class="form-control" required />
+                                        </div>
+                                        <div clas="col-3">
+                                            <button id="search-button" type="button" class="btn btn-primary">
+                                                Search for Vehicle
+                                            </button>
+                                        </div>
+                                        <button id="change-search-button" type="button" class="btn btn-secondary">
+                                            Change Vehicle
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vin">VIN</label>
+                                    <input type="text" name="VIN" id="vin" class="form-control" />
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- GAP insurance warning -->
+                    <div class="cols-sm-12 col-lg-5">
+                        <div class="blank-space"></div>
+                        <div class="card" id="error-list-card">
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Error</strong>
+                            </div>
+                            <div class="card-body">
+                                <p>In order to continue you must rectify the following:</p>
+                                <ul id="error-list">
+                                    <!-- validation list populated here by JS -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="blank-space"></div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-7">
+                    <form id="returned-vehicle-form">
+                        <fieldset id="returned-vehicle">
+                            <h5 class="h5">Returned Vehicle</h5>
+                            <hr class="style-two" />
+                            <div class="form-group">
+                                <label for="manufacturer-select">Manufacturer<span class="required-asterix">*</span></label>
+                                <select name="Vehicle Manufacturer" class="form-control" id="manufacturer-select"
+                                    required>
+                                    <option value="" selected="">Choose...</option>
+                                    <option value="RL">Abarth</option>
+                                    <option value="AM">AC</option>
+                                    <option value="FB">Aixam</option>
+                                    <option value="A0">Alfa Romeo</option>
+                                    <option value="SG">Allied Vehicles</option>
+                                    <option value="F5">Asia</option>
+                                    <option value="A1">Aston Martin</option>
+                                    <option value="A2">Audi</option>
+                                    <option value="A3">Austin</option>
+                                    <option value="A5">Bentley</option>
+                                    <option value="A4">BMW</option>
+                                    <option value="A6">Bristol</option>
+                                    <option value="DI">Brook Miller Mobility Ltd</option>
+                                    <option value="CO">Cadillac</option>
+                                    <option value="AY">Carbodies</option>
+                                    <option value="G1">Caterham</option>
+                                    <option value="CB">Chevrolet</option>
+                                    <option value="F6">Chrysler</option>
+                                    <option value="A7">Citroen</option>
+                                    <option value="H8">Coleman Milne</option>
+                                    <option value="ND">Corvette</option>
+                                    <option value="A8">Dacia</option>
+                                    <option value="G2">Daewoo</option>
+                                    <option value="A9">Daihatsu</option>
+                                    <option value="B0">Daimler</option>
+                                    <option value="H9">De Tomaso</option>
+                                    <option value="KW">Dodge</option>
+                                    <option value="RQ">DS</option>
+                                    <option value="AZ">Fairways</option>
+                                    <option value="B2">Ferrari</option>
+                                    <option value="B3">Fiat</option>
+                                    <option value="B4">Ford</option>
+                                    <option value="B1">FSO</option>
+                                    <option value="?U">GMC</option>
+                                    <option value="AK">HMC</option>
+                                    <option value="MY">Holden Mobility</option>
+                                    <option value="B5">Honda</option>
+                                    <option value="NG">Hummer</option>
+                                    <option value="B6">Hyundai</option>
+                                    <option value="OT">Infiniti</option>
+                                    <option value="B7">Isuzu</option>
+                                    <option value="B8">Jaguar</option>
+                                    <option value="B9">Jeep</option>
+                                    <option value="C0">Kia</option>
+                                    <option value="C1">Lada</option>
+                                    <option value="J5">Lamborghini</option>
+                                    <option value="C2">Lancia</option>
+                                    <option value="C3">Land Rover</option>
+                                    <option value="?A">Lexmoto</option>
+                                    <option value="C4">Lexus</option>
+                                    <option value="EZ">Ligier</option>
+                                    <option value="?8">Lincoln</option>
+                                    <option value="KE">London Taxi's International</option>
+                                    <option value="F3">Lonsdale</option>
+                                    <option value="C5">Lotus</option>
+                                    <option value="H6">MacNeillie</option>
+                                    <option value="H0">Mahindra</option>
+                                    <option value="F7">Marcos</option>
+                                    <option value="H4">Marlin</option>
+                                    <option value="G4">Maserati</option>
+                                    <option value="UU">Maybach</option>
+                                    <option value="C6">Mazda</option>
+                                    <option value="?M">Mclaren</option>
+                                    <option value="Q0">McLaren</option>
+                                    <option value="C7">Mercedes-Benz</option>
+                                    <option value="F4">MG</option>
+                                    <option value="EX">Microcar</option>
+                                    <option value="YY">MINI</option>
+                                    <option value="C8">Mitsubishi</option>
+                                    <option value="C9">Morgan</option>
+                                    <option value="F2">Morris</option>
+                                    <option value="D0">Nissan</option>
+                                    <option value="EQ">Noble</option>
+                                    <option value="D1">Opel</option>
+                                    <option value="AN">Perodua</option>
+                                    <option value="D2">Peugeot</option>
+                                    <option value="AX">PGO</option>
+                                    <option value="D3">Porsche</option>
+                                    <option value="D4">Proton</option>
+                                    <option value="D5">Reliant</option>
+                                    <option value="D6">Renault</option>
+                                    <option value="D7">Rolls-Royce</option>
+                                    <option value="D8">Rover</option>
+                                    <option value="D9">Saab</option>
+                                    <option value="LQ">San</option>
+                                    <option value="E0">Sao</option>
+                                    <option value="E1">SEAT</option>
+                                    <option value="AJ">Sebring</option>
+                                    <option value="F8">Simca</option>
+                                    <option value="E2">Skoda</option>
+                                    <option value="ZY">Smart</option>
+                                    <option value="FO">Smart Car</option>
+                                    <option value="J6">Spectre</option>
+                                    <option value="?L">Spyker</option>
+                                    <option value="G3">Ssangyong</option>
+                                    <option value="H5">Startins</option>
+                                    <option value="E3">Subaru</option>
+                                    <option value="E4">Suzuki</option>
+                                    <option value="E5">Talbot</option>
+                                    <option value="H2">Tata</option>
+                                    <option value="?Z">Tesla</option>
+                                    <option value="QW">Tesla</option>
+                                    <option value="E6">Toyota</option>
+                                    <option value="F1">Triumph</option>
+                                    <option value="F9">TVR</option>
+                                    <option value="E7">Vauxhall/Opel</option>
+                                    <option value="AL">Venturi</option>
+                                    <option value="E8">Volkswagen</option>
+                                    <option value="E9">Volvo</option>
+                                    <option value="G0">Westfield</option>
+                                    <option value="?K">Wilcox </option>
+                                    <option value="F0">Yugo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="model-select">Model<span class="required-asterix">*</span></label>
+                                <select name="Vehicle Model" class="form-control" id="model-select" required>
+                                    <option selected="" value="">Choose...</option>
+                                    <option value="A4">124</option>
+                                    <option value="A0">500</option>
+                                    <option value="A1">500C</option>
+                                    <option value="A2">595</option>
+                                    <option value="A3">595C</option>
+                                    <option value="A5">695</option>
+                                    <option value="A6">695C</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fuel-type-select">Fuel Type</label>
+                                <select class="form-control" id="fuel-type-select">
+                                    <option value="">Choose...</option>
+                                    <option value="1">Petrol</option>
+                                    <option value="2">Diesel</option>
+                                    <option value="3">P/LPG</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="transmission-select">Transmission</label>
+                                <select class="form-control" id="transmission-select">
+                                    <option value="">Choose...</option>
+                                    <option value="1">Manual</option>
+                                    <option value="2">Automatic</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="model-year">Model Year</label>
+                                <input type="text" name="Model Year" id="model-year" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="aspiration-select">Aspiration</label>
+                                <select class="form-control" id="aspiration-select" name="Aspiration">
+                                    <option value="">Choose...</option>
+                                    <option value="1">Normal</option>
+                                    <option value="2">Turbo</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="engine-size">Engine Size</label>
+                                <input type="text" name="Engine Size" id="engine-size" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Keyword1">Keyword 1</label>
+                                <input type="text" name="Keyword 1" id="Keyword1" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Keyword2">Keyword 2</label>
+                                <input type="text" name="Keyword 2" id="Keyword2" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="Keyword3">Keyword 3</label>
+                                <input type="text" name="Keyword 3" id="Keyword3" class="form-control" />
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div id="detail-confirm-buttons">
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-danger detail-confirm-button" type="button" id="incorrect-vehicle-details-button">
+                                    <small>Correct reg, but incorrect vehicle details</small>
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-primary detail-confirm-button" type="button" id="correct-vehicle-details-button">
+                                    <small>Vehicle details are Correct</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="find-vehicle-button" type="button">
+                        <small>Find vehicle</small>
+                    </button>
+                    <button class="btn btn-secondary" id="edit-vehicle-button" type="button">
+                        <small>Edit</small>
+                    </button>
+                    <form id="additional-details-form">
+                        <fieldset id="additional-details">
+                            <div class="blank-space"></div>
+                            <h5 class="h5">Additional Vehicle Details</h5>
+                            <hr class="style-two" />
+                            <div class="form-group">
+                                <label for="first-registered-date-picker">Date First Registered</label>
+                                <input id="first-registered-date-picker" name="Date First Registered" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="vehicle-purchase-date-picker">Vehicle Purchase Date:</label>
+                                <input id="vehicle-purchase-date-picker" name="Vehicle Purchase Date:" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="current-mileage">Current Mileage</label>
+                                <input type="number" name="current-mileage" id="current-mileage" class="form-control"
+                                    name="Current Mileage" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="invoice-value">Invoice Value</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">GBP</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="Invoice Value"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="is-car-new" />
+                                    <label class="form-check-label" for="is-car-new">
+                                        Is car new?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="is-vehicle-financed" />
+                                    <label class="form-check-label" for="is-vehicle-financed">
+                                        Is Vehicle Financed?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="transmission">Vehicle Use</label>
+                                <select class="form-control" id="vehicle-use" name="Vehicle Use" required>
+                                    <option selected="" value="">Choose... </option>
+                                    <option value="1">Private</option>
+                                    <option value="2">Commercial</option>
+                                    <option value="3">Hire And Reward</option>
+                                    <option value="4">Motability</option>
+                                    <option value="5">Business</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stock-id">Stock ID</label>
+                                <input type="text" name="Stock ID" id="stock-id" class="form-control" name="Stock ID"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="warranty-expires-date-picker">Manufacturers Warranty Expires</label>
+                                <input id="warranty-expires-date-picker" name="Manufacturers Warranty Expires" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="delivery-date-picker">Delivery Date</label>
+                                <input id="delivery-date-picker" name="Delivery Date" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="mot-due-date-picker">MOT Due Date</label>
+                                <input id="mot-due-date-picker" name="MOT Due Date" required />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--Vehicle search-->
+                <div class="col-sm-12 col-lg-5">
+                    <div id="vehicle-table">
+                        <h5 class="h5">Vehicle Search Results</h5>
+                        <hr class="style-two" />
+                        <table class="table table-hover table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Model Name</th>
+                                    <th scope="col">Model Year</th>
+                                    <th scope="col">Cubic Capacity</th>
+                                    <th scope="col">Fuel Type</th>
+                                    <th scope="col">Transmission</th>
+                                    <th scope="col">Asperiation</th>
+                                    <th scope="col">Is 4x4</th>
+                                </tr>
+                            </thead>
+
+                            <!--the tbody has been ripped directly from Autoprocess-->
+                            <tbody>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 25 TFSI (95ps) S Line (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 25 TFSI (95ps) S
+                                            Line
+                                            (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="" aria-describedby="returnedVehicleList_ModelYear">&nbsp;</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 25 TFSI (95ps) SE (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 25 TFSI (95ps)
+                                            SE (s/s)
+                                            Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="" aria-describedby="returnedVehicleList_ModelYear">&nbsp;</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 25 TFSI (95ps) Sport (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 25 TFSI (95ps)
+                                            Sport
+                                            (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="" aria-describedby="returnedVehicleList_ModelYear">&nbsp;</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 30 TFSI (116ps) S Line (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 30 TFSI (116ps)
+                                            S Line
+                                            (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2019" aria-describedby="returnedVehicleList_ModelYear">2019</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 30 TFSI (116ps) SE (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 30 TFSI (116ps)
+                                            SE (s/s)
+                                            Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2019" aria-describedby="returnedVehicleList_ModelYear">2019</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 30 TFSI (116ps) Sport (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-qualifiedmodelid="1">1.0 30 TFSI (116ps)
+                                            Sport
+                                            (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2019" aria-describedby="returnedVehicleList_ModelYear">2019</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 TFSI (95ps) Black Edition Nav (s/s) Hatchback 3d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-glassmodelid="263401"
+                                            data-qualifiedmodelid="1">1.0 TFSI (95ps) Black Edition
+                                            Nav (s/s) Hatchback 3d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2018" aria-describedby="returnedVehicleList_ModelYear">2018</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 TFSI (95ps) Black Edition Nav (s/s) Hatchback 3d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-glassmodelid="276081"
+                                            data-qualifiedmodelid="1">1.0 TFSI (95ps) Black Edition
+                                            Nav (s/s) Hatchback 3d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2018" aria-describedby="returnedVehicleList_ModelYear">2018</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 TFSI (95ps) Black Edition Nav (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-glassmodelid="263408"
+                                            data-qualifiedmodelid="1">1.0 TFSI (95ps) Black Edition
+                                            Nav (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2018" aria-describedby="returnedVehicleList_ModelYear">2018</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                                <tr>
+                                    <td role="gridcell" style="text-align:left;" title="1.0 TFSI (95ps) Black Edition Nav (s/s) Sportback 5d 999cc"
+                                        aria-describedby="returnedVehicleList_ModelName"><a href="javascript:void(0)"
+                                            class="vehicle-model-anchor" data-glassmodelid="276085"
+                                            data-qualifiedmodelid="1">1.0 TFSI (95ps) Black Edition
+                                            Nav (s/s) Sportback 5d 999cc</a></td>
+                                    <td role="gridcell" style="text-align:center;" title="2018" aria-describedby="returnedVehicleList_ModelYear">2018</td>
+                                    <td role="gridcell" style="text-align:center;" title="999" aria-describedby="returnedVehicleList_EngineCC">999</td>
+                                    <td role="gridcell" style="text-align:center;" title="Petrol" aria-describedby="returnedVehicleList_VehicleFuelType">Petrol</td>
+                                    <td role="gridcell" style="text-align:center;" title="Manual" aria-describedby="returnedVehicleList_VehicleTransmissionType">Manual</td>
+                                    <td role="gridcell" style="text-align:center;" title="Turbo" aria-describedby="returnedVehicleList_VehicleAspirationType">Turbo</td>
+                                    <td role="gridcell" style="text-align:center;" title="False" aria-describedby="returnedVehicleList_Is4x4">False</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+
+        <div class="blank-space"></div>
+        <hr class="style-two" />
+        <div class="row">
+            <div class="col-6">
+                <a href="contactdetails.html" id="back-button" class="btn btn-secondary btn-lg">Previous <i class="fas fa-angle-right"
+                        style="font-size:14px"></i>
+                </a>
+            </div>
+            <div class="col-6">
+                <button id="save-button" style="right:0px" type="button" class="btn btn-success btn-lg" disabled>Save <i class="fas fa-angle-right"
+                        style="font-size:14px"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="blank-space"></div>
+        <footer class="page-footer font-small blue fixed-bottom">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center">
+                <small>Copyright © Listers 2019. All rights reserved.</small>
+            </div>
+        </footer>
+        <!-- Footer -->
+</body>
+
+</html>

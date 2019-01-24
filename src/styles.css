@@ -1,0 +1,69 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  hr.style-two {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .required-asterix,
+  .error {
+    color: red;
+  }
+  
+  .gj-datepicker {
+    width: 70%;
+  }
+  
+  footer {
+    background: #00377b;
+    color: white;
+  }
+  
+  .blank-space {
+    height: 30px;
+  }
+
+  #save-button {
+    position: absolute;
+    bottom: 0px;
+  }
+    
+    #detail-confirm-buttons,
+    #returned-vehicle,
+    #additional-details,
+    #find-vehicle-button,
+    #vehicle-table,
+    #edit-vehicle-button,
+    #change-search-button,
+    #error-list-card,
+    #gap-warning-card {
+        display: none;
+    }
+
+    
+  footer {
+    background: #00377b;
+    color: white;
+  }
+
+  table{
+    font-size: 11px;
+  }
+  
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
