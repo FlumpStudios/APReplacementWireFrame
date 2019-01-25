@@ -11,7 +11,9 @@ let pageDate = {
     },
     policyHolderType: [
         { policyHolderTypeId: "1", name: "Person" },
-        { policyHolderTypeId: "2", name: "Organisation" }
+        //After conversation with ant, we would be looking to add a third policy type called 'joint.
+        { policyHolderTypeId: "2", name: "Joint" },
+        { policyHolderTypeId: "3", name: "Organisation" }
     ],
     gapInformation: {
         title: "Key Information on GAP Insurance presented to customer on:",
@@ -24,6 +26,33 @@ let pageDate = {
         ]
     }
 };
+
+let clientDetails = {
+    policyHolderTypeId:"",
+    personalDetails:{
+        tite:"",
+        firstName:"",
+        surname:"",
+        mobileTel:"",
+        emailAddress:""        
+    },
+    address:{
+        poscode:"",
+        propertyNumber:"",
+        propertyName:"",
+        addressLine:"",
+        town:"",
+        county:"",
+        country:""
+    },
+    contactDetails:{
+        telephone:"",
+        //QUESTION: Seems off we have in personal detail and contact details, assume we can move to one place.
+        mobileTel:""
+    }
+
+
+}
 
 /***************
  ** PAGE CODE **
