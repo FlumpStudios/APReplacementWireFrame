@@ -67,3 +67,10 @@ body {
     width: 100%;
     position: absolute;
   }
+
+  .fas, .far{
+    padding-right: 4px;
+    cursor: pointer;
+  }
+
+

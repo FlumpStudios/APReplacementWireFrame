@@ -90,6 +90,8 @@ $(document).ready(() => {
     );
 })
 
+
+
 //Event handelers
 function handleRegChange(regAvailable) {
     var vehicleRegGroup = $("#vehicle-reg-available-group");
