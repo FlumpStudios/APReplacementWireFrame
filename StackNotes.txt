@@ -1,0 +1,11 @@
+.NET core 2.2 (3 preview?)
+Entity framework Core with SQL 
+Angular 7
+Bootstap 4
+Websocket (SignalR)
+Rijndael AES encryption
+Identity server 4
+
+
+
+

@@ -63,12 +63,12 @@ function setPageDependingOnType() {
       $(".fa-times").hide();
       $(".client-status").text("Active");
       break;
-
-
-
-
-
-
+    case "INPROGRESS":
+      $("#status").val("1004");
+      $(".fa-thumbs-up").hide();
+      $(".fa-times").hide();
+      $(".client-status").text("Active");
+      break;
     default:
       console.log("either no query string found or query string is invalid");
       break;

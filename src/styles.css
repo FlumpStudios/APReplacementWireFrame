@@ -50,8 +50,12 @@ body {
     color: white;
   }
 
-  table{
+  #vehicle-table{
     font-size: 11px;
+  }
+
+  #search-table{
+    font-size: 12px;
   }
   
   .video-responsive {
