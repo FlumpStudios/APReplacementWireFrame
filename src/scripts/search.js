@@ -67,7 +67,25 @@ function setPageDependingOnType() {
       $("#status").val("1004");
       $(".fa-thumbs-up").hide();
       $(".fa-times").hide();
-      $(".client-status").text("Active");
+      $(".client-status").text("In Progress");
+      break;
+    case "PARTIAL":
+      $("#status").val("1");
+      $(".fa-thumbs-up").hide();
+      $(".fa-times").hide();
+      $(".client-status").text("Partial Quote");
+      break;
+    case "EXPIRED":
+      $("#status").val("99");
+      $(".fa-thumbs-up").hide();
+      $(".fa-times").hide();
+      $(".client-status").text("Expired");
+      break;
+    case "QUOTED":
+      $("#status").val("2");
+      $(".fa-thumbs-up").hide();
+      $(".fa-times").hide();
+      $(".client-status").text("Quoted");
       break;
     default:
       console.log("either no query string found or query string is invalid");
