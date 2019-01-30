@@ -5,6 +5,6 @@ $("document.html").ready(() => {
 
 function handleSubmit(){
     if ($("#login-form").valid()){
-        document.location.href = "/home.html"
+        document.location.href = "../home.html"
     }
 }
