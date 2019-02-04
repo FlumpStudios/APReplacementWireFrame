@@ -208,7 +208,10 @@ function setupDatePickers() {
         uiLibrary: "bootstrap4"
     });
 
+    $("#first-registered-date-picker").val(moment().format("DD/MM/YYYY"));
     $("#vehicle-purchase-date-picker").val(moment().format("DD/MM/YYYY"));
+    $("#warranty-expires-date-picker").val(moment().add(2, 'years').format("DD/MM/YYYY"));
+    $("#mot-due-date-picker").val(moment().add(2, 'years').add(1,'days').format("DD/MM/YYYY"));
 }
 
 function validateForm(id) {
