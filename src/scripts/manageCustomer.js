@@ -26,4 +26,4 @@ function handleConfirm(){
   $("#customer-initiated-check").prop("disabled","true");
   $("#confirm-modal").modal("hide");
   $("#question-icon").toggleClass('fa-question-circle fa-check-circle');  
-}
+} 
