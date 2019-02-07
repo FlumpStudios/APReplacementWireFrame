@@ -38,9 +38,6 @@ let searchResults = [
       $("#delivery-date-to").val(moment().endOf('month').format("DD/MM/YYYY"));
 
     setPageDependingOnType();
-
-  
-  
   });
   
   //helper functions
