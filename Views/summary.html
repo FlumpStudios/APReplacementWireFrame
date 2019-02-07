@@ -324,15 +324,31 @@
             <div class="blank-space"></div>
             <hr class="style-two" />
             <div class="row">
-                <div class="col-6">
+                <div class="col-2">
                     <a href="productsandservices.html" id="back-button" class="btn btn-secondary btn-lg">
                         Previous <i class="fas fa-angle-right" style="font-size:14px"></i>
                     </a>
                 </div>
-                <div class="col-6">
-                    <button id="save-button" style="right:0px" type="button" class="btn btn-success btn-lg">
-                        Save <i class="fas fa-angle-right" style="font-size:14px"></i>
-                    </button>
+                <div class="col-10">
+                    <div class="float-right">
+                        <a href="./customerdocuments.html" id="documents" style="right:0px" type="button" class="btn btn-success btn-lg ">
+                                Documents <i class="fas fa-angle-right" style="font-size:14px"></i>
+                        </a>
+
+                        <a href="#" id="not-taken-up" disabled style="right:0px" type="button" class="btn btn-success btn-lg">
+                                Not Taken Up <i class="fas fa-angle-right" style="font-size:14px"></i>
+                        </a>
+
+                        <a href="#" id="activate" data-toggle="modal" data-target="#confirm-activate" style="right:0px" type="button" class="btn btn-success btn-lg">
+                                Activate <i class="fas fa-angle-right" style="font-size:14px"></i>
+                        </a >            
+                        <a href="./search.html" id="save-button-summary" style="right:0px" type="button" class="btn btn-success btn-lg">
+                            Save <i class="fas fa-angle-right" style="font-size:14px"></i>
+                        </a>
+                        <a  id="cancel-button" href="#" data-toggle="modal" data-target="#confirm-cancel" style="right:0px" type="button" class="btn btn-danger btn-lg">
+                                Cancel <i class="fas fa-angle-right" style="font-size:14px"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,6 +377,57 @@
         </div>
     </div>
 
+    <div class="modal" id="confirm-activate">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Policy Activation</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+    
+                    <div class="modal-body">
+                            <ul>
+                                    <li>Listers SMART £10 Bodyshop Excess 30cm</li>
+                                    <li>Service Plan</li>
+                            </ul>          
+                    </div>
+    
+                    <div class="modal-footer">
+                        <a href="productsandservices.html" class="btn btn-secondary">Confirm</a>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="confirm-cancel">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Policy Cancellation</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+        
+                        <div class="modal-body">
+                                <ul>
+                                        <li>Listers SMART £10 Bodyshop Excess 30cm</li>
+                                        <li>Service Plan</li>
+                                </ul>
+                                <div class="form-group">
+                                        <label for="note">Cancellation Note:</label>
+                                        <textarea class="form-control" rows="5" id="note"></textarea>
+                                </div>
+                        </div>
+        
+                        <div class="modal-footer">
+                            <a href="productsandservices.html" class="btn btn-secondary">Confirm</a>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
     <!-- Footer -->
