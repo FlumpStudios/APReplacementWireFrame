@@ -27,8 +27,6 @@ $("document").ready(() => {
   });
   console.log(getUrlVars());
   setPageDependingOnType();
-
-
 });
 
 //helper functions
